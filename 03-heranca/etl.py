@@ -1,4 +1,4 @@
-import pandas as pd # types: ignore
+import pandas as pd # type: ignore
 
 class ETLProcess:
     def __init__(self, fonte_dados):
@@ -18,7 +18,7 @@ class ETLProcess:
         dados_transformados = self.tranformar_dados(dados_extraidos)
         self.carregar_dados(dados_transformados)
 
-class ETLCSV(ETLProcess)
+class ETLCSV(ETLProcess):
      def extrair_dados(self):
          return pd.read_csv(self.fonte_dados)
 
